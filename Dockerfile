@@ -1,6 +1,7 @@
 FROM maven as stage1
 COPY ./ /app/boss-eureka
-RUN cd /app/boss-eureka && mvn -q clean package
+WORKDIR /app/boss-eureka
+RUN mvn -q clean package
 
 FROM openjdk
 COPY --from=stage1 /app/boss-eureka /app/boss-eureka

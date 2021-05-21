@@ -1,2 +1,2 @@
 # boss-eureka
-Eureka service for the Bank of Smoothstack 
+Eureka service for the Bank of Smoothstack
